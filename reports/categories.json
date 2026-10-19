@@ -1,0 +1,13 @@
+{
+  "synthetic": true,
+  "base_texts": 40,
+  "augmented_texts": 160,
+  "group_cv_f1_macro": [
+    0.7615686274509803,
+    0.39756521739130435,
+    0.7082352941176471,
+    0.4533333333333333
+  ],
+  "mean": 0.5801756180733163,
+  "limitation": "Artificial examples only. No independent real email category labels. Do not interpret as real-world quality."
+}

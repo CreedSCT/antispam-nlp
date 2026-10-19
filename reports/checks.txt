@@ -1,0 +1,14 @@
+/workspace/scratch/474a4ef900be/build/venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_api (test_project.TestProject.test_api) ... ok
+test_html_does_not_run_script (test_project.TestProject.test_html_does_not_run_script) ... ok
+test_mime_ignores_attachment (test_project.TestProject.test_mime_ignores_attachment) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.040s
+
+OK
+
+Browser inference: 1598 samples, 0 label mismatches, max absolute score error 7.333e-14.
+Docker build: NOT RUN (Docker unavailable).
+Hosted browser UI: deployment succeeded, full browser interaction not tested.

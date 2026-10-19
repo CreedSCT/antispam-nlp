@@ -1,0 +1,142 @@
+{
+  "seed": 42,
+  "python": "3.12.14",
+  "sklearn": "1.8.0",
+  "manifest": [
+    {
+      "file": "20021010_easy_ham.tar.bz2",
+      "sha256": "f9fc56e1f68780f9afdc6d23a2e24c4584af988afc58bbfabae500e51f3a2f36",
+      "parsed": 2551,
+      "source": "SpamAssassin"
+    },
+    {
+      "file": "20021010_hard_ham.tar.bz2",
+      "sha256": "7cd46378877e00caa4e943920a854e2ef95ac29e296cf2a3ce691fb4104c4fbd",
+      "parsed": 250,
+      "source": "SpamAssassin"
+    },
+    {
+      "file": "20021010_spam.tar.bz2",
+      "sha256": "048c2d2e61ff13f7cef88788c7184ee57dbc9049c58e5bd706fdb8537e9bac81",
+      "parsed": 501,
+      "source": "SpamAssassin"
+    },
+    {
+      "file": "20030228_spam_2.tar.bz2",
+      "sha256": "40bc444c596ff3e71505ae334f115b16f9b946786ee68f09b921b6b99217fd00",
+      "parsed": 1397,
+      "source": "SpamAssassin"
+    },
+    {
+      "file": "lingspam_public.tar.gz",
+      "sha256": "e3a0bb61dff2f1e47c368d1c376c27f79319cd600a8784ea3872e4b77d22c148",
+      "parsed": 2893,
+      "source": "LingSpam"
+    }
+  ],
+  "raw_train": 7592,
+  "unique_train_pool": 6125,
+  "train_count": 4900,
+  "validation_count": 1225,
+  "removed_test_overlap": 1306,
+  "removed_duplicates": 161,
+  "label_conflicts": 0,
+  "train_sources": {
+    "LingSpam": 2876,
+    "SpamAssassin": 3249
+  },
+  "train_labels": {
+    "ham": 4479,
+    "spam": 1646
+  },
+  "test_labels": {
+    "ham": 600,
+    "spam": 998
+  },
+  "test_unique": 1543,
+  "experiments": {
+    "naive_bayes": {
+      "cv": {
+        "precision": {
+          "mean": 0.9813365632855685,
+          "std": 0.0028219994887350728
+        },
+        "recall": {
+          "mean": 0.9574893420901027,
+          "std": 0.008742476252375224
+        },
+        "f1": {
+          "mean": 0.9692392227860873,
+          "std": 0.004126900697749574
+        }
+      },
+      "validation_default": {
+        "precision": 0.9661538461538461,
+        "recall": 0.9544072948328267,
+        "f1": 0.9602446483180428,
+        "tn": 885,
+        "fp": 11,
+        "fn": 15,
+        "tp": 314,
+        "fpr": 0.012276785714285714
+      }
+    },
+    "logistic": {
+      "cv": {
+        "precision": {
+          "mean": 0.9862589061217661,
+          "std": 0.0031608624866853886
+        },
+        "recall": {
+          "mean": 0.9248588547067635,
+          "std": 0.018535951347992893
+        },
+        "f1": {
+          "mean": 0.9544668714412609,
+          "std": 0.009569522455266363
+        }
+      },
+      "validation_default": {
+        "precision": 0.9777777777777777,
+        "recall": 0.9361702127659575,
+        "f1": 0.9565217391304348,
+        "tn": 889,
+        "fp": 7,
+        "fn": 21,
+        "tp": 308,
+        "fpr": 0.0078125
+      }
+    }
+  },
+  "selected_model": "naive_bayes",
+  "threshold": 0.5700000000000001,
+  "validation": {
+    "precision": 0.9750778816199377,
+    "recall": 0.9513677811550152,
+    "f1": 0.963076923076923,
+    "tn": 888,
+    "fp": 8,
+    "fn": 16,
+    "tp": 313,
+    "fpr": 0.008928571428571428
+  },
+  "test": {
+    "precision": 0.9934354485776805,
+    "recall": 0.9098196392785571,
+    "f1": 0.9497907949790795,
+    "tn": 594,
+    "fp": 6,
+    "fn": 90,
+    "tp": 908,
+    "fpr": 0.01
+  },
+  "notes": [
+    "Test excluded from fitting, model selection and threshold tuning. Exact normalized text overlaps removed from training pool.",
+    "CV at default threshold on train only. Validation used for model/threshold selection. No refit after selection.",
+    "Near duplicates and shared corpus origins may remain. Test performance is not a guarantee on modern or Russian email."
+  ],
+  "test_total_files": 1600,
+  "test_skipped_empty_text": 2,
+  "test_scored_count": 1598,
+  "test_duplicate_texts": 55
+}

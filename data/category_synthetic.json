@@ -1,0 +1,52 @@
+{
+  "advertising": [
+    "Buy discounted shoes in our online store",
+    "Save money on electronics during our sale",
+    "Special offer on health products today",
+    "Shop luxury watches at low prices",
+    "Subscribe to our premium software deal",
+    "Order vitamins with free shipping",
+    "Get a coupon for your next purchase",
+    "Book a holiday package at a discount"
+  ],
+  "jobs": [
+    "We are hiring a Python developer",
+    "Apply for an open engineering position",
+    "Your job interview is scheduled next week",
+    "Our company offers a full time vacancy",
+    "Send your resume to the recruitment team",
+    "A remote analyst role is available",
+    "We would like to discuss your career experience",
+    "Invitation to interview for a security specialist job"
+  ],
+  "dating": [
+    "I would love to meet you for a date",
+    "Find your romantic partner on our dating site",
+    "Singles near you are looking for love",
+    "Let us arrange a romantic dinner together",
+    "Your dating profile received a new match",
+    "Meet someone special and start a relationship",
+    "I enjoyed our date and want to see you again",
+    "Join our singles club to meet your soulmate"
+  ],
+  "fraud": [
+    "Send your bank password to claim a prize",
+    "Transfer an advance fee to receive your inheritance",
+    "Verify your credit card number immediately or lose access",
+    "You won a lottery you never entered pay a processing fee",
+    "I need your help moving millions from a frozen bank account",
+    "Provide your login credentials to prevent account suspension",
+    "Pay a release fee for your unexpected cash reward",
+    "Send your secret recovery phrase to unlock your wallet"
+  ],
+  "ordinary": [
+    "The project meeting will take place on Tuesday",
+    "Please review the attached budget report",
+    "Your lecture notes are ready for review",
+    "The server maintenance window starts tonight",
+    "Can you confirm the agenda for our discussion",
+    "Here is the summary of our research findings",
+    "The library book you requested is available",
+    "We have updated the documentation for the API"
+  ]
+}
